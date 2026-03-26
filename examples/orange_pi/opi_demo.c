@@ -20,12 +20,20 @@
 #include <stdio.h>
 
 /* Orange Pi Zero 2W example — adjust to your board */
-#define FL_FWD  264
-#define FL_REV  265
-#define FR_FWD  266
-#define FR_REV  267
-#define RL_FWD  268
-#define RL_REV  269
+
+/* FL (motor 1) — прямой */
+#define FL_FWD  256
+#define FL_REV  257
+
+/* FR (motor 2) — ЗЕРКАЛЬНЫЙ: меняем fwd↔rev */
+#define FR_FWD  259   
+#define FR_REV  258   
+
+/* RL (motor 3) — прямой */
+#define RL_FWD  260
+#define RL_REV  76
+
+/* RR (motor 4) — прямой */
 #define RR_FWD  270
 #define RR_REV  271
 
